@@ -1,4 +1,3 @@
-n,m=map(int,input().split())
-N=n*m
-L="1"*len(str(N))
-print(N+int(L))
+for i in range(1000,0,-1):
+    print("{0}\t".format(i))
+    if(i%5==0):print("")
