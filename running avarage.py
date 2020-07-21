@@ -1,7 +1,6 @@
-t=int(input())
-su=0
-for i in range(1,t+1):
-    n=float(input())
-    su=float(su+n)
-    a=float(su/i)
-    print(a)
+n=int(input())
+l=list(map(int,input().split()))
+sum=0
+for i in range(len(l)):
+	sum+=l[i]
+	print(float(sum/(i+1)))

@@ -1,0 +1,12 @@
+t=int(input())
+for i in range(t):
+    n=input()
+    s= list(map(int, str(n)))
+    m1=max(s)
+    s.remove(m1)
+    m2=max(s)
+    s.remove(m2)
+    s.insert(0,m1)
+    s.insert(1,m2)
+    S=list(map(str,s))
+    print("".join(S))
